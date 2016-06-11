@@ -1,4 +1,4 @@
-ObservedEarth is an app that simplifies the process of downloading, processing, and visualising multispectral earth observation data. *It allows you to see Earth from above*.
+ObservedEarth is an app that simplifies the process of downloading, processing, and visualising multispectral earth observation data. **See Earth from above**.
 
 ![Landsat8](img/landsat8crop.jpeg)
 <sup>IMAGE: FLICKR, [NASA](http://www.nasa.gov/goddard)</sup>
