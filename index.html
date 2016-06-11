@@ -1,31 +1,44 @@
 ---
 layout: page
-title: My website
-subtitle: This is where I will tell my friends way too much about me
+title: ObservedEarth
+subtitle: Earth Observation data on your iPhone and iPad
 ---
+
+<a href="http://observedearth.is.coming.soon">
+<img src="img/Download_on_the_App_Store_Badge_US-UK_135x40.svg"
+     onerror="this.src='img/Download_on_the_App_Store_Badge_US-UK_135x40.png'"
+     alt="Download on the App Store" class="img-responsive center-block">
+</a>
+
+<article class="post-preview">
+<div class="post-entry">
+{% capture my-include %}{% include maincontent.md %}{% endcapture %}
+{{ my-include | markdownify }}
+</div>
+</article>
 
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
-	
+
 	  {% if post.subtitle %}
 	  <h3 class="post-subtitle">
 	    {{ post.subtitle }}
 	  </h3>
-	  {% endif %}  
+	  {% endif %}
     </a>
 
     <p class="post-meta">
       Posted on {{ post.date | date: "%B %-d, %Y" }}
     </p>
-  
+
     <div class="post-entry">
       {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
 	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
     </div>
-  
+
    </article>
   {% endfor %}
 </div>
