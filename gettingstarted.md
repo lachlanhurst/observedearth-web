@@ -1,16 +1,20 @@
 ---
 layout: page
-title: FAQ
-subtitle: Frequently Asked Questions
+title: Getting started
+subtitle: A brief introduction to Landsat data and ObservedEarth
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+### Landsat scenes
+The Landsat 8 satellite orbits Earth approximately once every 100 minutes, with each orbit traveling a different path. There are a finite number of paths, and Landsat 8 will repeat the same path once every 16 days. Each path is broken down into a number of rows, Landsat scanline data is grouped into rows. The combination of a unique path and row identifies a Landsat scene, in its raw form Landsat data is made available on a scene-by-scene basis. Scenes for all land areas are shown below (red boxes).
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+![Landsat 8 scenes](../img/wrs2desc-land.png)
+<sup>Landsat 8 - land based scenes (descending only)</sup>
 
-What else do you need?
+These same scenes are displayed within ObservedEarth, although the number of scenes displayed at any one time is limited to reduce visual clutter. Note the path and row of the centremost scene are displayed in the lower left of the earth view.
 
-### my history
+![Landsat 8 scenes in ObservedEarth](../img/oe_scenes.png)
+<sup>Landsat 8 - ObservedEarth scene selection (descending only)</sup>
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Double tapping the earth view will present a cloud free preview image of the current scene. 3D touch peek and pop gestures are also supported in this view.
+
+Pressing the tiles button in the lower right will open the history data for the current scene.
