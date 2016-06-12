@@ -22,3 +22,8 @@ Learn more:
 * [Getting started](gettingstarted)
 * [Share options](sharing)
 * [Processing details](processing)
+
+Related reading:
+: ^
+* [USGS Landsat8](http://landsat.usgs.gov/landsat8.php)
+* [Landsat on AWS](https://aws.amazon.com/public-data-sets/landsat/)
