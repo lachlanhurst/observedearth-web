@@ -26,7 +26,7 @@ From this view it is possible to remove unwanted scenes by either swiping a scen
 
 ![Preview](../img/oe_how_to_open_tiles.png)
 
-Once fully expanded, pinching a specific scene will zoom in on it's contents to give a closer view. Once zoomed in users are also able to crop the scene potentially accessing higher resolution data.
+Once fully expanded, pinching a specific scene will zoom in on it's contents to give a closer view. Zoom mode allows cropping the scene extents, higher resolution data can be accessed when the spatial extents of the data being viewed are reduced.
 
 ![Preview](../img/oe_how_to_zoom_tiles.png)
 
