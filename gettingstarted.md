@@ -15,6 +15,7 @@ These same scenes are displayed within ObservedEarth, although the number of sce
 ![Landsat 8 scenes in ObservedEarth](../img/oe_scenes.png)
 <sup>Landsat 8 - ObservedEarth scene selection (descending only)</sup>
 
+### Previewing a single scene
 Double tapping the earth view will present a cloud free preview image of a single scene as shown below. On the iPhone 6s 3D touch peek and pop gestures can also be used to open this preview.
 
 ![Preview](../img/oe_preview.png)
@@ -22,6 +23,7 @@ Double tapping the earth view will present a cloud free preview image of a singl
 
 The complete set of scenes through time can be downloaded by pressing the `Open` button. This will open the time series view and automatically download all preview images of scenes that satisfy the specified cloud coverage threshold (refer to settings).
 
+### Time series view
 From this view it is possible to remove unwanted scenes by either swiping a scene to the right, or selecting a number of scenes by tapping and then pressing the `trash` button. Individual scenes can be viewed by using a pinch gesture to expand the time series view.
 
 ![Preview](../img/oe_how_to_open_tiles.png)
