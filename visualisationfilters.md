@@ -25,6 +25,9 @@ Varying attributes are highlighted by mapping different bands to color channels.
 ### Natural color
 ![Natural color](../img/visualisation_naturalcolor.png)
 
+The natural color visualisation is a direct mapping of the red, green, and blue (4, 3, 2) bands to the displayed images RGB color chanels. This displays the data as close as possible to what would be observed from space.
+
+The *Preview image* is generated in a similar manner. The difference is that this visualisation is based on the raw data allowing it to be is corrected for sun elevation, this helps even the brigthness across time. The contrast can also be manually modified within ObservedEarth itself to show detail that may be washed out, or over/under-saturated in the preview image.
 
 ### Vegetation
 ![Vegetation](../img/visualisation_vegetation.png)
