@@ -63,11 +63,26 @@ Bands 5, 6, and 4 are mapped to the RGB color channels in this visualisation.
 ![Vegetation indices](../img/visualisation_vegetationindices.png)
 
 The following vegetation indices are included in ObservedEarth:
+: ^
 * Normalized Difference Vegetation Index (NDVI)
 * Soil Adjusted Vegetation Index (SAVI)
 * Enhanced Vegetation Index (EVI)
 
-These are described in the [*Landsat Surface Reflectance-Dervived Spectral Indices - Product Guide*](http://landsat.usgs.gov/documents/si_product_guide.pdf) produced by the United States Geological Survey.
+These indices are described in the [*Landsat Surface Reflectance-Dervived Spectral Indices - Product Guide*](http://landsat.usgs.gov/documents/si_product_guide.pdf) produced by the United States Geological Survey.
+
+    NDVI = (Band 5 – Band 4) / (Band 5 + Band 4)
+    
+    SAVI = (Band 5 – Band 4) / (Band 5 + Band 4 + 0.5) * 1.5
+    
+    EVI = (Band 5 – Band 4) / (Band 5 + 6 * Band 4 – 7.5 * Band 2 + 1)
+
+All three indices range between -1 and 1, higher values indicate vegetation, whereas values below 0 indicate no vegetation. The index value for each pixel is mapped to a color via a lookup table; values below -0.2 are black, values near zero dark blue, and from 0 though 1 colours transition from red to green. Green indicating regions of lush vegetation.
+
+ObservedEarth calculates to Top of Atmosphere (ToA) reflectance using the sun elevation extracted from the scenes metadata. The value for each band is then fed into the above equations. As of version 1.0 it is not possible to adjust the contrast of these indices.
 
 ## Single band
 ![Single band](../img/visualisation_singleband.png)
+
+Data for each of the 9 Landsat8 bands can be displayed individually using these filters. DN values are corrected for sun elevation and then by default passed through a histogram equalisation process to convert to a value between 0 and 1. By specifying a contrast range the default histogram equalisation is overwritten. Low values are shown in blue, higher values red.
+
+Contrast ranges are specified on a per band basis, and these are carried over across visualisations. It is often easier to modify contrast ranges for a band combination visualisation one band at a time using the single band visualisation.
