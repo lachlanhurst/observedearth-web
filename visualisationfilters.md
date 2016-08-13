@@ -27,27 +27,47 @@ Varying attributes are highlighted by mapping different bands to color channels.
 
 The natural color visualisation is a direct mapping of the red, green, and blue (4, 3, 2) bands to the displayed images RGB color chanels. This displays the data as close as possible to what would be observed from space.
 
-The *Preview image* is generated in a similar manner. The difference is that this visualisation is based on the raw data allowing it to be is corrected for sun elevation, this helps even the brigthness across time. The contrast can also be manually modified within ObservedEarth itself to show detail that may be washed out, or over/under-saturated in the preview image.
+The *Preview image* is generated in a similar manner. The difference is that this visualisation is based on the raw data allowing it to be is corrected for sun elevation helping even the brigthness across time. The contrast can also be manually modified within ObservedEarth to show detail that may be washed out, or over/under-saturated in the preview image.
 
 ### Vegetation
 ![Vegetation](../img/visualisation_vegetation.png)
+
+For the Vegetation filter the Near Infra-Red (NIR) band 5 is mapped to the red colour channel. Healthly vegetation reflects more light in the NIR spectrum, therefore regions of vegetation are highlighted in bright red when using this visualisation. 
+
+Bands 5, 4, and 3 are mapped to the RGB color channels in this visualisation.
 
 
 ### Urban
 ![Urban](../img/visualisation_urban.png)
 
+Urban regions, or ground with harder surfaces are highlighted in purple when using this visualisation.
+
+Band 7, the mid infrared band, is mapped to the red color channel. As this band picks up active heat sources it is useful in picking up bushfires and other sources of heat.
+
+Bands 7, 6, and 4 are mapped to the RGB color channels in this visualisation.
 
 ### Agriculture
 ![Agriculture](../img/visualisation_agriculture.png)
 
+This visualisation helps differentiate argiculture from other types of vegetation. Crops will appear as bright green, whereas other plant life will have a darker shade.
+
+Bands 6, 5, and 2 are mapped to the RGB color channels in this visualisation.
 
 ### Water
 ![Water](../img/visualisation_water.png)
+
+Bands 5, 6, and 4 are mapped to the RGB color channels in this visualisation.
 
 
 ## Vegetation indices
 ![Vegetation indices](../img/visualisation_vegetationindices.png)
 
+The following vegetation indices are included in ObservedEarth:
+* Normalized Difference Vegetation Index (NDVI)
+* Soil Adjusted Vegetation Index (SAVI)
+* Enhanced Vegetation Index (EVI)
+
+These are described in the [*Landsat Surface Reflectance-Dervived Spectral Indices - Product Guide*](http://landsat.usgs.gov/documents/si_product_guide.pdf) produced by the United States Geological Survey.
 
 ## Single band
 ![Single band](../img/visualisation_singleband.png)
