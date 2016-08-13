@@ -21,7 +21,7 @@ Learn more:
 : ^
 * [Getting started](gettingstarted)
 * [Share options](sharing)
-* [Processing details](processing)
+* [Visualisation](visualisationfilters)
 
 Related reading:
 : ^
